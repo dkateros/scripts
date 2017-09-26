@@ -9,9 +9,6 @@ Assumes a default maven layout. Uses Junit4 and Mockito. Tested with Python 2.7.
 ```java
 package gr.dkateros.demo.javaut;
 
-import gr.interamerican.bo2.arch.exceptions.DataException;
-import gr.interamerican.bo2.arch.exceptions.LogicException;
-import gr.interamerican.bo2.impl.open.creation.Factory;
 import org.junit.*;
 
 import static org.mockito.Mockito.*;
@@ -25,7 +22,7 @@ public class TestFoo {
 	/**
 	 * Test subject.
 	 */
-	Foo sut = Factory.create(Foo.class);
+	Foo sut = new Foo();
 
 	/**
 	 * Test class setup.
